@@ -1,11 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
+
 <body>
-  
+
+  <script>
+
+    let humanScore = 0;
+    let computerChoice = 0;
+
+    function getComputerChoice(num) {
+      if (num <= 0.300000000000000) {
+        return "rock";
+      } else if (num <= 0.600000000000000) {
+        return "paper";
+      } else if (num <= 1) {
+        return "scissors";
+
+      }
+    }
+
+    function getHumanChoice(inputNumber) {
+      return prompt(inputNumber);
+    }
+
+    function playRound(humanChoice, computerChoice) {
+
+    }
+
+    const humanSelection = getHumanChoice();
+    const computerSelection = getComputerChoice();
+
+    function humanChoice() {
+
+    }
+
+    // console.log(getComputerChoice(Math.random()))
+    console.log(getHumanChoice());
+    // console.log(Math.random());
+
+  </script>
 </body>
+
 </html>
